@@ -36,16 +36,7 @@ public class UserServiceImplementation implements UserService {
         User user = new User(userDTO);      //We cannot use userDtO directly as we use User in UserRepository so we convert userDTO to user.
         User savedUser = userRepository.save(user);     //Save the value in database.
         UserDTO savedUserDTO = new UserDTO(savedUser);      //Covert savedUser to UserDTO form.
-        if(userDTO.getRoles().equals(Roles.ADMIN))
-        {
-            Admin admin = new Admin();
-            admin.setUser(savedUser);
-            admin.setBranch(userDTO.getBranch());
-            admin.setPosition(userDTO.getPosition());
-            admin.setJoiningDate(userDTO.getJoiningDate());     //Should be inserted in specific formate
-            admin.setWorkingShift(userDTO.getWorkingShift());
-            adminService.addAdmin(admin);       //Isn't admin null right now?
-        }
+
         if(userDTO.getRoles().equals(Roles.CUSTOMER)){
             Customer customer = new Customer();
             customer.setUser(user);

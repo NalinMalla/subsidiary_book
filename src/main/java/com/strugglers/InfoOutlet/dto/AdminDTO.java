@@ -7,10 +7,10 @@ import java.time.LocalDate;
 
 public class AdminDTO {
     private int id;
-    private String workingShift;
     private LocalDate joiningDate;
-    private String branch;
     private String position;
+    private String phoneNumber;
+    private String imagePath;
     private UserDTO userDTO;
 
     public AdminDTO()
@@ -20,9 +20,7 @@ public class AdminDTO {
     public  AdminDTO(Admin admin)
     {
         this.id = admin.getId();
-        this.workingShift = admin.getWorkingShift();
         this.joiningDate = admin.getJoiningDate();
-        this.branch = admin.getBranch();
         this.position = admin.getPosition();
         //this.userDTO = new UserDTO(admin.getUser());        //Less good due to type coupling i.e. if there is a case where u need to use this constructor there is a high chance of sending this null.
         //We set the data of userDto in the AdminServiceImplementation.
@@ -36,13 +34,6 @@ public class AdminDTO {
         this.id = id;
     }
 
-    public String getWorkingShift() {
-        return workingShift;
-    }
-
-    public void setWorkingShift(String workingShift) {
-        this.workingShift = workingShift;
-    }
 
     public LocalDate getJoiningDate() {
         return joiningDate;
@@ -50,14 +41,6 @@ public class AdminDTO {
 
     public void setJoiningDate(LocalDate joiningDate) {
         this.joiningDate = joiningDate;
-    }
-
-    public String getBranch() {
-        return branch;
-    }
-
-    public void setBranch(String branch) {
-        this.branch = branch;
     }
 
     public String getPosition() {
@@ -76,4 +59,19 @@ public class AdminDTO {
         this.userDTO = userDTO;
     }
 
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
 }

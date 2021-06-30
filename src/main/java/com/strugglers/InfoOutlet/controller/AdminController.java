@@ -19,11 +19,7 @@ public class AdminController {
 
 
     //This is accessed using POSTMAN; METHOD=POST | localhost:8080/users if @PostMapping("/addUser")used we need to specify localhost:8080/users/addUser
-    @PostMapping      //Save and add data from controller; @PostMapping("/addUser") would be easier but according to convention we should use the @RequestMapping("/users") for all task rather than adding new things.
-    public Admin addAdmin(@RequestBody AdminDTO adminDTO)
-    {
-        return adminService.addAdmin(new Admin(adminDTO));
-    }
+
 
     @GetMapping     //Retrieving data in database using GET method in POSTMAN
     public List<AdminDTO> getAll()

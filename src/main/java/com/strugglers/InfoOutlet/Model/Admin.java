@@ -16,10 +16,10 @@ public class Admin {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     //user id is auto incremented sequentially not randomly like in AUTO
     private int id;
-    private String workingShift;
     private LocalDate joiningDate;
-    private String branch;
     private String position;
+    private String phoneNumber;
+    private String imagePath;
 
 
     @OneToOne(fetch = FetchType.LAZY)       //When Admin is queried if we use EAGER then all data is retrieved and if LAZY is used only the necessary data is retrieved and the rest is retrieved when needed. Here, user foreign key is the unnecessary data.
@@ -29,22 +29,12 @@ public class Admin {
     public  Admin()
     {}
 
-    public Admin(int id, String workingShift, LocalDate joiningDate, String branch, String position, User user) {
-        this.id = id;
-        this.workingShift = workingShift;
-        this.joiningDate = joiningDate;
-        this.branch = branch;
-        this.position = position;
-        this.user = user;
-    }
-
     public  Admin(AdminDTO adminDTO)
     {
         this.id = adminDTO.getId();
-        this.workingShift = adminDTO.getWorkingShift();
         this.joiningDate = adminDTO.getJoiningDate();
-        this.branch = adminDTO.getBranch();
         this.position = adminDTO.getPosition();
+        this.phoneNumber = adminDTO.getPhoneNumber();
         //User related is set in Implementation
     }
 
@@ -56,28 +46,12 @@ public class Admin {
         this.id = id;
     }
 
-    public String getWorkingShift() {
-        return workingShift;
-    }
-
-    public void setWorkingShift(String workingShift) {
-        this.workingShift = workingShift;
-    }
-
     public LocalDate getJoiningDate() {
         return joiningDate;
     }
 
     public void setJoiningDate(LocalDate joiningDate) {
         this.joiningDate = joiningDate;
-    }
-
-    public String getBranch() {
-        return branch;
-    }
-
-    public void setBranch(String branch) {
-        this.branch = branch;
     }
 
     public String getPosition() {
@@ -96,5 +70,19 @@ public class Admin {
         this.user = user;
     }
 
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
 }

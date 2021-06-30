@@ -24,10 +24,6 @@ public class AdminServiceImplementation implements AdminService {
     @Autowired
     private UserRepository userRepository;
 
-    @Override
-    public Admin addAdmin(Admin admin){
-        return adminRepository.save(admin);
-    }
 
     @Override
     public AdminDTO findByID(int id) {
@@ -59,8 +55,7 @@ public class AdminServiceImplementation implements AdminService {
         Optional<Admin> optionalAdmin = adminRepository.findById(adminDTO.getId());
         Admin admin = optionalAdmin.orElseThrow(() -> new RuntimeException("Admin with given ID not found."));
         admin.setPosition(adminDTO.getPosition());
-        admin.setBranch(adminDTO.getBranch());
-        admin.setWorkingShift(adminDTO.getWorkingShift());
+        admin.setPhoneNumber(adminDTO.getPhoneNumber());
         admin.setJoiningDate(adminDTO.getJoiningDate());
 
         //UserDTO to updated user related data.
