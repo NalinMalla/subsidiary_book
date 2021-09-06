@@ -1,15 +1,15 @@
-package com.strugglers.InfoOutlet.service.implementation;
+package com.codeSlayers.Subsidiary_Book.service.implementation;
 
-import com.strugglers.InfoOutlet.Model.Admin;
-import com.strugglers.InfoOutlet.Model.Customer;
-import com.strugglers.InfoOutlet.Model.User;
-import com.strugglers.InfoOutlet.dto.AdminDTO;
-import com.strugglers.InfoOutlet.dto.UserDTO;
-import com.strugglers.InfoOutlet.repository.UserRepository;
-import com.strugglers.InfoOutlet.service.AdminService;
-import com.strugglers.InfoOutlet.service.CustomerService;
-import com.strugglers.InfoOutlet.service.UserService;
-import com.strugglers.InfoOutlet.utils.Roles;
+import com.codeSlayers.Subsidiary_Book.Model.Admin;
+import com.codeSlayers.Subsidiary_Book.Model.Customer;
+import com.codeSlayers.Subsidiary_Book.Model.User;
+import com.codeSlayers.Subsidiary_Book.dto.AdminDTO;
+import com.codeSlayers.Subsidiary_Book.dto.UserDTO;
+import com.codeSlayers.Subsidiary_Book.repository.UserRepository;
+import com.codeSlayers.Subsidiary_Book.service.AdminService;
+import com.codeSlayers.Subsidiary_Book.service.CustomerService;
+import com.codeSlayers.Subsidiary_Book.service.UserService;
+import com.codeSlayers.Subsidiary_Book.utils.Roles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;

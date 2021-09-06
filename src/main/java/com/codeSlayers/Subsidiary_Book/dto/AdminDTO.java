@@ -1,7 +1,7 @@
-package com.strugglers.InfoOutlet.dto;
+package com.codeSlayers.Subsidiary_Book.dto;
 
-import com.strugglers.InfoOutlet.Model.Admin;
-import com.strugglers.InfoOutlet.Model.User;
+import com.codeSlayers.Subsidiary_Book.Model.Admin;
+import com.codeSlayers.Subsidiary_Book.Model.User;
 
 import java.time.LocalDate;
 

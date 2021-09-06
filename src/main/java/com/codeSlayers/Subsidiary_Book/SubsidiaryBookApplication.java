@@ -1,14 +1,14 @@
-package com.strugglers.InfoOutlet;
+package com.codeSlayers.Subsidiary_Book;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class InfoOutletApplication {
+public class SubsidiaryBookApplication {
 
 	public static void main(String[] args)
 	{
-		SpringApplication.run(InfoOutletApplication.class, args);
+		SpringApplication.run(SubsidiaryBookApplication.class, args);		//It is calling its self and passing arguments
 	}
 
 }

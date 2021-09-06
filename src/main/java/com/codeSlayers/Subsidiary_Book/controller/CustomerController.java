@@ -1,7 +1,7 @@
-package com.strugglers.InfoOutlet.controller;
+package com.codeSlayers.Subsidiary_Book.controller;
 
-import com.strugglers.InfoOutlet.dto.CustomerDTO;
-import com.strugglers.InfoOutlet.service.CustomerService;
+import com.codeSlayers.Subsidiary_Book.dto.CustomerDTO;
+import com.codeSlayers.Subsidiary_Book.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

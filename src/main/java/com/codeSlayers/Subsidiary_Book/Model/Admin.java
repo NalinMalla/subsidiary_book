@@ -1,9 +1,9 @@
-package com.strugglers.InfoOutlet.Model;
+package com.codeSlayers.Subsidiary_Book.Model;
 
 
-import com.strugglers.InfoOutlet.dto.AdminDTO;
-import com.strugglers.InfoOutlet.dto.UserDTO;
-import com.strugglers.InfoOutlet.utils.Roles;
+import com.codeSlayers.Subsidiary_Book.dto.AdminDTO;
+import com.codeSlayers.Subsidiary_Book.dto.UserDTO;
+import com.codeSlayers.Subsidiary_Book.utils.Roles;
 
 import javax.persistence.*;
 import java.time.LocalDate;

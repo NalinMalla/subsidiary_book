@@ -1,24 +1,25 @@
-package com.strugglers.InfoOutlet.dto;
+package com.codeSlayers.Subsidiary_Book.Model;
 
-import com.strugglers.InfoOutlet.Model.Customer;
-
+import javax.persistence.*;
 import java.time.LocalDate;
 
-public class CustomerDTO {
+
+@Entity
+@Table
+public class Customer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private LocalDate registerDate;
     private boolean membership;
     private String citizenshipId;
-    private UserDTO userDTO;
 
-    public CustomerDTO() {
-    }
 
-    public CustomerDTO(Customer customer) {
-        this.id = customer.getId();
-        this.registerDate = customer.getRegisterDate();
-        this.membership = customer.isMembership();
-        this.citizenshipId = customer.getCitizenshipId();
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    public Customer() {
     }
 
     public int getId() {
@@ -53,11 +54,19 @@ public class CustomerDTO {
         this.citizenshipId = citizenshipId;
     }
 
-    public UserDTO getUserDTO() {
-        return userDTO;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserDTO(UserDTO userDTO) {
-        this.userDTO = userDTO;
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Customer(int id, LocalDate registerDate, boolean membership, String citizenshipId, User user) {
+        this.id = id;
+        this.registerDate = registerDate;
+        this.membership = membership;
+        this.citizenshipId = citizenshipId;
+        this.user = user;
     }
 }

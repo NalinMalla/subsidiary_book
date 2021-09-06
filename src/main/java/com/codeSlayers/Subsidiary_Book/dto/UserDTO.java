@@ -1,9 +1,9 @@
-package com.strugglers.InfoOutlet.dto;
+package com.codeSlayers.Subsidiary_Book.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.strugglers.InfoOutlet.Model.User;
-import com.strugglers.InfoOutlet.utils.Roles;
+import com.codeSlayers.Subsidiary_Book.Model.User;
+import com.codeSlayers.Subsidiary_Book.utils.Roles;
 //Is mapped with Interface((view source in browser)) so if we don't want users to see something like password then we keep it in User as it needs to be stored in the database but don't keep it in UserDTO so that it is not displayed in the interface.
 import javax.persistence.Column;
 import java.time.LocalDate;

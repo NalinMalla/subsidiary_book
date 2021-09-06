@@ -1,7 +1,7 @@
-package com.strugglers.InfoOutlet.service;
+package com.codeSlayers.Subsidiary_Book.service;
 
-import com.strugglers.InfoOutlet.Model.User;
-import com.strugglers.InfoOutlet.dto.UserDTO;
+import com.codeSlayers.Subsidiary_Book.Model.User;
+import com.codeSlayers.Subsidiary_Book.dto.UserDTO;
 import java.util.List;
 
 //This is mainly for adding features of the database into the actual user interface that the user uses so it uses UserDTO as it is responsible for the interface side data.

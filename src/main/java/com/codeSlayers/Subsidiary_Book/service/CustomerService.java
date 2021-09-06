@@ -1,9 +1,9 @@
-package com.strugglers.InfoOutlet.service;
+package com.codeSlayers.Subsidiary_Book.service;
 
-import com.strugglers.InfoOutlet.Model.Admin;
-import com.strugglers.InfoOutlet.Model.Customer;
-import com.strugglers.InfoOutlet.dto.AdminDTO;
-import com.strugglers.InfoOutlet.dto.CustomerDTO;
+import com.codeSlayers.Subsidiary_Book.Model.Admin;
+import com.codeSlayers.Subsidiary_Book.Model.Customer;
+import com.codeSlayers.Subsidiary_Book.dto.AdminDTO;
+import com.codeSlayers.Subsidiary_Book.dto.CustomerDTO;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package com.strugglers.InfoOutlet.Model;
+package com.codeSlayers.Subsidiary_Book.Model;
 
-import com.strugglers.InfoOutlet.dto.UserDTO;
-import com.strugglers.InfoOutlet.utils.Roles;
+import com.codeSlayers.Subsidiary_Book.dto.UserDTO;
+import com.codeSlayers.Subsidiary_Book.utils.Roles;
 
 import javax.persistence.*;
 //Is mapped with database so represents the structure of the table in the database
